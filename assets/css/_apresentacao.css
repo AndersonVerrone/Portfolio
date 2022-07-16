@@ -1,0 +1,72 @@
+.apresentacao{
+    font-family: var(--font-apresentacao);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../img/pexels-wendelin-jacober-1460230.jpg);    
+}
+
+.apresentacao__container{
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+.apresentacao__nome{
+    font-family: var(--font-nome);
+    border-right: 2px solid var(--laranja-claro);
+    /* text-align: center; */
+    /* width: 38rem; */
+    /* height: 5rem; */
+    padding-top: 1rem;
+    padding-left: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 0 0rem 10rem;
+    animation: piscarCursor 500ms infinite normal, digitando 4s steps(50) 1s normal;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+@keyframes digitando{
+    from{
+        width: 0;
+    }
+    to{
+        width: 35rem;
+    }
+}
+
+@keyframes piscarCursor {
+
+    from{
+        border-right-color: #F2921D;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+.apresentacao__ola{
+    margin: 0 0 0rem 10rem;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.apresentacao__cargo{
+    margin: 0 0 0rem 11rem;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.apresentacao__foto{
+    width: 30%;
+    margin-right: 10rem;
+}
+
+.apresentacao__link{
+    margin: 2rem 0 0 20rem;
+}

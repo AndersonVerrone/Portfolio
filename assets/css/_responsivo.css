@@ -1,0 +1,33 @@
+@media (max-width: 996px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .nav__mobile{
+        display:block;
+    }
+
+    .nav__lista{
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 40vh;
+        height: 90vh;
+        background-color: var(--verde-escuro);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.6s ease-in;
+    }
+
+    .lista__itens{
+        opacity: 0;
+        margin-left: 0;
+    }
+
+    .nav__lista.active{
+        transform: translateX(0);
+    }
+
+}

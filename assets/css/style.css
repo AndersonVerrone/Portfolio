@@ -1,0 +1,60 @@
+@import url(./_variaveis.css);
+@import url(./_cabecalho.css);
+@import url(./_responsivo.css);
+@import url(./_apresentacao.css);
+@import url(./_sobreMim.css);
+@import url(./_projetos.css);
+@import url(./_habilidades.css);
+
+body{
+    background-color: var(--preto);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-family: var(--font-principal);
+}
+
+a{
+    text-decoration: none;
+}
+
+.divisao{
+    height: 6rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divisao__texto{
+    color: var(--branco);
+    font-size: 3rem;
+    text-shadow: 5px 5px 10px var(--laranja);
+}
+
+.parallax{
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.botao{
+    width: 15rem;
+    height: 5rem;
+    background-color: var(--laranja);
+    border-radius: 5rem;
+    text-align: center;
+    font-family: var(--font-principal);
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--branco);
+    padding-top: 1.2rem;
+    box-shadow: 6px 6px 5pv var(--preto);
+}

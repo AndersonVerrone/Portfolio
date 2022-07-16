@@ -1,0 +1,35 @@
+.sobreMim{
+    font-family: var(--font-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../img/pexels-visit-greenland-360912.jpg);    
+}
+
+.sobreMim__foto{
+    width: 30%;
+    margin-left: 2rem;
+}
+
+.sobreMim__descricao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.descricao__titulo{
+    color: var(--branco);
+    font-size: 5rem;
+    font-weight: 900
+}
+
+.descricao__texto{
+    color: var(--branco);
+    width: 50%;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 3rem;
+    text-align: justify;
+    margin-top: 3rem;
+}

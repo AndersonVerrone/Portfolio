@@ -1,0 +1,59 @@
+.projetos{
+    background-image: url(../img/pexels-pixabay-509675-projetos.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projetos__caixa{
+    background: url(../img/calculadora.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20rem;
+    height: 15rem;
+    border: 1rem solid var(--laranja);
+    border-radius: 3rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.projetos__faixa{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.15);
+    width: 100%;
+    opacity: 1;
+    transition: opacity 1s;
+    padding-top: 0.5rem;
+    height: 2rem;
+    text-align: center;
+}
+
+.projetos__detalhe{
+    background-color: var(--branco);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    border-radius: 2rem;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s;
+}
+
+.projetos__detalhe:hover{
+    opacity: 0.5;
+}
+
+.detalhe__texto{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 1rem;
+    color: var(--laranja-escuro);
+}
+
+

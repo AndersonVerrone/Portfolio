@@ -1,0 +1,12 @@
+:root{
+    --laranja-claro:#F2921D;
+    --laranja:#F26513;
+    --laranja-escuro:#F24B0F;
+    --branco:#F2F2F2;
+    --preto:#0D0D0D;
+    --verde-escuro: #030D00;
+
+    --font-principal:'Lexend Deca', sans-serif;
+    --font-apresentacao:'Caveat', cursive;
+    --font-nome:'Courgette', cursive;
+}

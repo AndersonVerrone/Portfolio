@@ -1,0 +1,124 @@
+.habilidades{
+    background-image: url(../img/pexels-quang-nguyen-vinh-2158824\ habilidades.jpg);
+}
+
+.habilidades__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cartao__item{
+    height: 360px;
+    width: 290px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: background 1s;
+
+}
+
+.cartao__html{
+    background: url(../img/html5.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cartao__css{
+    background: url(../img/css-3.png);
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    
+}
+
+.cartao__js{
+    background: url(../img/js.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cartao__react{
+    background: url(../img/react.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cartao__seo{
+    background: url(../img/seo.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cartao__responsivel{
+    background: url(../img/responsivo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cartao__item:hover{
+    border: 1px solid var(--laranja-escuro);
+    background-position: center left 8rem;
+
+}
+
+.cartao__css:hover, .cartao__responsivel:hover{
+    border: 1px solid var(--laranja-escuro);
+    background-position: center left 10rem;
+
+}
+
+.cartao{
+    height: 379px;
+    width: 300px;
+    background-color: var(--branco);
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 1rem 1rem 5rem var(--preto);
+}
+
+.item__titulo, .item__texto{
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.cartao__item:hover .item__titulo,.cartao__item:hover .item__texto{
+    opacity: 1;
+}
+
+.item__texto{
+    width: 50%;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1rem;
+    color: (--preto);
+    
+}
+
+.item__titulo{
+    text-align: center;
+    width: 50%;
+    color: var(--laranja-claro);
+    font-weight: 800;
+    font-size: 1.25rem;
+}
