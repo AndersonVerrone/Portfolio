@@ -23,21 +23,29 @@
                     <div class="nav__mobile__linha3"></div>
                 </div>
                 <ul class="nav__lista">
-                    <a href="#" class="lista__itens">Início</a>
+                    <a href="#inicio" class="lista__itens">Início</a>
                     <a href="#sobreMim" class="lista__itens">Sobre mim</a>
-                    <a href="#" class="lista__itens">Projetos</a>
-                    <a href="#" class="lista__itens">Habilidades</a>
+                    <a href="#projetos" class="lista__itens">Projetos</a>
+                    <a href="#habilidades" class="lista__itens">Habilidades</a>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="apresentacao parallax" >
+            <section class="apresentacao parallax" id="inicio">
                 <div class="apresentacao__container">
                     <p class="apresentacao__ola">Olá, eu sou o</p>
                     <p class="apresentacao__nome">Anderson Verrone</p>
                     <p class="apresentacao__cargo">Desenvolvedor Front-End!</p>
-                    <a href="https://www.linkedin.com/in/anderson-verrone-funicello-30144670/" class="apresentacao__link botao">Linkedin</a>
-                    <a href="#" class="apresentacao__link botao">Github</a>
+                    <div class="apresentacao__botao">
+                        <a href="#" class="botao__github botao">
+                            <img src="./assets/img/icon-github (1).png" alt="" class="botao__logo">
+                            <p class="botao__texto">Github</p>
+                        </a>
+                        <a href="#" class="botao__linkedin botao">
+                            <img src="./assets/img/icon-linkedin.png" alt="" class="botao__logo">
+                            <p class="botao__texto">Linkedin</p>
+                        </a>
+                    </div>
                 </div>
                 <img src="./assets/img/logo-apresentacao.png" alt="foto de apresentação" class="apresentacao__foto">
             </section>
@@ -54,7 +62,7 @@
             <div class="divisao">
                 <p class="divisao__texto">Projetos!</p>
             </div>
-            <section class="projetos parallax">
+            <section class="projetos parallax" id="projetos">
                 <div class="projetos__caixa">
                     <!-- <div class="projetos__faixa">Em Breve!</div> -->
                     <div class="projetos__detalhe">
@@ -66,7 +74,7 @@
             <div class="divisao">
                 <p class="divisao__texto">Habilidades!</p>
             </div>
-            <section class="habilidades parallax">
+            <section class="habilidades parallax" id="habilidades">
                 <div class="habilidades__container">
                     <div class="habilidades__cartao cartao">
                         <div class="cartao__item cartao__html">
@@ -105,9 +113,10 @@
                         </div>
                     </div>
                 </div>
-
-
             </section>
+            <footer class="rodape">
+
+            </footer>
         </main>
        <script src="./assets/Js/mobile-navbar.js"></script> 
     </body>

@@ -9,7 +9,7 @@
 
     .nav__lista{
         position: absolute;
-        top: 10vh;
+        top: 15vh;
         right: 0;
         width: 40vh;
         height: 90vh;
@@ -30,4 +30,216 @@
         transform: translateX(0);
     }
 
+}
+
+@media screen and (min-width: 0) {
+    
+    /* Referente ao cabecalho*/
+
+    .cabecalho__logo{
+        width: 40%;
+    }
+
+    /* Referente a setor apresentacao*/
+    .apresentacao__foto{
+        display: none;
+    }
+
+    .apresentacao__container{
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .apresentacao__ola{
+        font-size: 2rem;
+        margin-left: 1rem;
+        margin-bottom: 0;
+    }
+
+    .apresentacao__nome{
+        margin-left: 1rem;
+        font-size: 2rem;
+        width: 17rem;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-left: 0.5rem;
+        padding-top: 0;
+    }
+
+    .apresentacao__cargo{
+        font-size: 2rem;
+        margin-left: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    @keyframes digitando{
+        from{
+            width: 0;
+        }
+        to{
+            width: 17
+            rem;
+        }
+    }
+
+    .apresentacao__botao{
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .botao:hover > .botao__texto{
+        animation: none;
+    }
+
+    .botao{
+        width: 10rem;
+        margin-top: 2rem;
+    }
+
+    /*referente ao setor sobre mim*/
+
+    .sobreMim__foto{
+        display: none;
+    }
+
+    .sobreMim__descricao{
+        margin-top: 5rem;
+    }
+
+    .descricao__titulo{
+        font-size: 2rem;
+    }
+
+
+    /* Parallax*/
+    .apresentacao{
+        height: 100vh !important;
+    }
+
+    .sobreMim{
+        height: 100% !important;
+    }
+
+    .projetos{
+        height: 100vh !important;
+    }
+
+    .habilidades{
+        height: 100% !important;
+    }
+
+    /*referente ao setor habilidades*/
+
+    .habilidades__container{
+        flex-direction: column;
+        height: 100%;
+        margin:  auto;
+    }
+
+}
+
+    
+
+/* @media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px){
+
+} */
+
+@media screen and (min-width: 1200px){
+
+    /* Referente ao cabecalho*/
+
+    .cabecalho__logo{
+        width: 10%;
+    }
+
+    /* Referente a setor apresentacao*/
+    .apresentacao__foto{
+        width: 30%;
+        margin-right: 10rem;
+        display: block;
+    }
+
+    .apresentacao__container{
+        /* gap: 3rem; */
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .apresentacao__ola{
+        font-size: 4rem;
+        margin-left: 10rem;
+        height: 6rem;
+        margin-top: 0;
+    }
+
+    .apresentacao__nome{
+        margin: 0 0 0rem 10rem;
+        font-size: 4rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+
+    .apresentacao__cargo{
+        font-size: 3rem;
+        margin-left: 11rem;
+        margin-top: 1rem;
+    }
+
+    @keyframes digitando{
+        from{
+            width: 0;
+        }
+        to{
+            width: 35rem;
+        }
+    }
+
+    .apresentacao__botao{
+        margin-left: 11rem;
+        margin-top: 1rem;
+    }
+
+    .botao{
+        width: 3rem;
+        margin-top: 1rem;
+    }
+
+    .botao:hover > .botao__texto{
+        animation: animacaoTextoBotao 1s steps(60) 0.5s  normal;
+    }
+
+    .botao:hover{
+        width: 10rem;
+    }
+
+    /*referente ao setor sobre mim*/
+
+    .sobreMim__foto{
+        display: block;
+    }
+
+    .descricao__titulo{
+        font-size: 5rem;
+    }
+
+    .parallax{
+        height: 100vh !important;
+    }
+
+    /*referente ao setor habilidades*/
+
+    .habilidades__container{
+        flex-direction: row;
+        gap: 1rem;
+        flex-wrap: wrap;
+        height: 100vh;
+        margin: 0 auto;
+    }
+    
 }

@@ -5,6 +5,7 @@
 @import url(./_sobreMim.css);
 @import url(./_projetos.css);
 @import url(./_habilidades.css);
+@import url(./_rodape.css);
 
 body{
     background-color: var(--preto);
@@ -18,7 +19,9 @@ a{
 }
 
 .divisao{
-    height: 6rem;
+    height: 20rem;
+    background-image: url(../img/rodape.png);
+    background-size: contain;
     text-align: center;
     display: flex;
     align-items: center;
@@ -32,7 +35,7 @@ a{
 }
 
 .parallax{
-    height: 100vh !important;
+    /* height: 100vh !important; */
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -46,15 +49,46 @@ a{
 }
 
 .botao{
-    width: 15rem;
-    height: 5rem;
-    background-color: var(--laranja);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
     border-radius: 5rem;
-    text-align: center;
-    font-family: var(--font-principal);
-    font-weight: 700;
-    font-size: 2rem;
     color: var(--branco);
-    padding-top: 1.2rem;
-    box-shadow: 6px 6px 5pv var(--preto);
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: var(--font-principal);
+    background-color: var(--laranja-claro);
+    transition: 1s;
+    padding-right: 1rem;
 }
+.botao__logo{
+    width: 3rem;
+    background-color: var(--branco);
+    border-radius: 50%;
+    border: 1px solid var(--laranja);
+}
+.botao__texto{
+    /* opacity: 0; */
+    /* transition: opacity 0.7s; */
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 1;
+    
+}
+
+
+
+
+@keyframes animacaoTextoBotao {
+    from{
+        width: 0;
+        opacity: 0;
+    }
+
+    to{
+        width: 6rem;
+        opacity: 1;
+    }
+}
+
