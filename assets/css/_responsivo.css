@@ -345,11 +345,11 @@
     }
     
     .sobreMim{
-        height: 100% !important;
+        height: 100vh !important;
     }
     
     .projetos{
-        height: 100% !important;
+        height: 100vh !important;
     }
     
     .habilidades{
@@ -360,6 +360,7 @@
         height: 100%;
         margin: 0;
         justify-content: space-between;
+        flex-direction: row;
     }
     
 }
