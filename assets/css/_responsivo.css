@@ -13,7 +13,7 @@
         right: 0;
         width: 40vh;
         height: 90vh;
-        background-color: var(--verde-escuro);
+        background-color: var(--cinza-escuro);
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -96,6 +96,7 @@
     .botao{
         width: 10rem;
         margin-top: 2rem;
+        font-size: 1.3rem;
     }
 
     /*referente ao setor sobre mim*/
@@ -105,37 +106,88 @@
     }
 
     .sobreMim__descricao{
-        margin-top: 5rem;
+        margin-top: 20vh;
     }
 
     .descricao__titulo{
         font-size: 2rem;
     }
 
-
-    /* Parallax*/
-    .apresentacao{
-        height: 100vh !important;
+    .descricao__texto{
+        width: 90%;
+        font-size: 2rem;
+        line-height: 3rem;
+        margin: 5rem 0;
     }
-
-    .sobreMim{
-        height: 100% !important;
-    }
+    
+    /* referente ao setor Projetos */
 
     .projetos{
-        height: 100vh !important;
+        flex-direction: column;
     }
 
-    .habilidades{
-        height: 100% !important;
+    .projetos__container{
+        margin: 20vh auto 5rem;
+        flex-direction: column;
+        gap: 1rem;
     }
 
+
+
+    
     /*referente ao setor habilidades*/
-
+    
     .habilidades__container{
         flex-direction: column;
         height: 100%;
         margin:  auto;
+    }
+    
+    .habilidades__container{
+        justify-content: space-around;
+        gap: 1rem;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin: 20vh auto 5rem auto;
+    }
+
+    .projetos__detalhe{
+        background-color: var(--branco);
+        width: 100%;
+        height: 3rem;
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        border-radius: 2rem;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* referente ao setor Rodape */
+
+    .rodape{
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    /* Parallax*/
+    .apresentacao{
+        height: 100vh !important;
+    }
+    
+    .sobreMim{
+        height: 100% !important;
+    }
+    
+    .projetos{
+        height: 100% !important;
+    }
+    
+    .habilidades{
+        height: 100% !important;
     }
 
 }
@@ -179,6 +231,7 @@
     }
 
     .apresentacao__nome{
+        width: 33rem;
         margin: 0 0 0rem 10rem;
         font-size: 4rem;
         padding-left: 1rem;
@@ -208,6 +261,7 @@
     .botao{
         width: 3rem;
         margin-top: 1rem;
+        font-size: 1.3rem;
     }
 
     .botao:hover > .botao__texto{
@@ -232,14 +286,80 @@
         height: 100vh !important;
     }
 
+    .descricao__texto{
+        width: 50%;
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-top: 3rem;
+    }
+
+    /* referente ao setor Projetos */
+
+    .projetos__container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .projetos__detalhe{
+        background-color: var(--branco);
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        position: absolute;
+        border-radius: 2rem;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 1s;
+    }
+    
+    .projetos__detalhe:hover{
+        opacity: 0.5;
+    }
+
+
     /*referente ao setor habilidades*/
 
-    .habilidades__container{
+    /* .habilidades__container{
         flex-direction: row;
         gap: 1rem;
         flex-wrap: wrap;
         height: 100vh;
+        margin: 20vh auto 0;
+    } */
+
+    .habilidades__container{
+        justify-content: space-around;
+        gap: 1rem;
+        flex-wrap: wrap;
+        flex-direction: row;
         margin: 0 auto;
+
+    }
+
+    /* Parallax */
+
+    .apresentacao{
+        height: 100vh !important;
+    }
+    
+    .sobreMim{
+        height: 100% !important;
+    }
+    
+    .projetos{
+        height: 100% !important;
+    }
+    
+    .habilidades{
+        height: 100vh !important;
+    }
+
+    .rodape{
+        height: 100%;
+        margin: 0;
+        justify-content: space-between;
     }
     
 }

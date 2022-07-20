@@ -1,7 +1,18 @@
 .rodape{
     background-image: url(../img/rodape.png);
-    background-color: var(--verde-escuro);
+    background-color: var(--cinza-escuro);
     width: 100%;
     height: 30vh;
     background-size: contain;
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
 }
+
+.botao__texto, .rodape__texto{
+    margin-top: 0;
+    font-family: var(--font-principal);
+    color: var(--bege);
+    font-weight: 600;
+}
+

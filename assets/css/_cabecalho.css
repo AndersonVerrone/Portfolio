@@ -1,6 +1,6 @@
 .cabecalho{
     align-items: center;
-    background: var(--verde-escuro);
+    background: var(--cinza-escuro);
     display: flex;
     justify-content: space-around;
     width: 100%;

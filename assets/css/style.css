@@ -36,7 +36,7 @@ a{
 
 .parallax{
     /* height: 100vh !important; */
-    width: 100%;
+    /* width: 100% ; */
     position: relative;
     overflow: hidden;
     background-position: 50% 50%;
@@ -50,17 +50,17 @@ a{
 
 .botao{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 3rem;
     border-radius: 5rem;
-    color: var(--branco);
+    color: var(--bege);
     font-weight: 500;
-    font-size: 2rem;
     font-family: var(--font-principal);
-    background-color: var(--laranja-claro);
+    background-color: var(--cinza);
     transition: 1s;
     padding-right: 1rem;
+    justify-content: space-between;
+    /* align-items: center; */
 }
 .botao__logo{
     width: 3rem;

@@ -7,13 +7,13 @@
 }
 
 .apresentacao__container{
-    color: var(--branco);
+    color: var(--cinza-claro);
     display: flex;   
 }
 
 .apresentacao__nome{
     font-family: var(--font-nome);
-    border-right: 2px solid var(--laranja-claro);
+    border-right: 2px solid var(--bege);
     white-space: nowrap;
     overflow: hidden;
     animation: piscarCursor 500ms infinite normal, digitando 4s steps(50) 1s normal;
@@ -25,7 +25,7 @@
 @keyframes piscarCursor {
 
     from{
-        border-right-color: #F2921D;
+        border-right-color: var(--cinza);
     }
     to{
         border-right-color: transparent;

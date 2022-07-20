@@ -5,12 +5,11 @@
 .habilidades__container{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 1rem;
-    flex-wrap: wrap;
-    height: 100vh;
+    /* justify-content: space-around; */
+    /* height: 100%; */
     width: 100%;
-    margin: 0 auto;
+    
+
 }
 
 .cartao__item{
@@ -118,7 +117,7 @@
 .item__titulo{
     text-align: center;
     width: 50%;
-    color: var(--laranja-claro);
+    color: var(--cinza-escuro);
     font-weight: 800;
     font-size: 1.25rem;
 }
